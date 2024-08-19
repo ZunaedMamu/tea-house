@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">        
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.manrope{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+      </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -19,9 +30,94 @@
       </script>
 
 </head>
-<body>
-   <main>
+<body class="max-w-screen-2xl mx-auto manrope p-10 ">
+   <main class="">
+    <section class="flex justify-center items-center my-10">
+      <div class="container1 flex max-md:flex-col justify-between items-center gap-10 my-10">
+        <div class="c1-left p-5 max-w-xl max-h-[500] ">
+              <h2  class="font-extrabold text-5xl py-2">It's good tea time at The Tea House</h2>
+              <p class="text-sm text-gray-500 py-3">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+              <button class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] font-bold text-xs flex gap-2 justify-around p-3 text-white">Explore Now <div><img src="images/arrow.png" alt="" class="w-full "></div></button>
+        </div>
+        <div class="c1-right ">
+              <img src="images/banner.png" alt="" class="w-full relative">
+              <div class="absolute flex justify-around items-center gap-3 rounded-md shadow-xl p-2 bg-gray-50 max-md:bottom-0 bottom-64">
+                <div class="max-w-8"><img src="images/star-solid.svg" class="w-full" alt=""></div>
+                <div class="">
+                  <h4 class="font-extrabold text-xl">5.00</h4>
+                  <p>Trust Pilot Ratings</p>
+                </div>
+              </div>
+        </div>
     
+      </div>
+    </section>
+    <section class="my-10">
+     <div class="text-center my-5">
+      <h3 class="mb-3 text-3xl font-extrabold">Our Featured Products</h3>
+      <p class="text-sm lg:px-52"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+     </div>
+     <div class="flex justify-center items-center">
+      <div class="grid max-sm:grid-cols-1 max-md:grid-cols-2 grid-cols-4 gap-10 text-center">
+        <div class="card flex flex-col items-center  bg-gray-200 rounded-lg shadow-md max-h-96 max-w-64 p-5 overflow-hidden">
+          <img src="images/tea-1.png" class="max-w-full mb-5" alt="">
+          <h3 class="my-2 text-xl font-bold">Milk Tea</h3>
+          <p class="text-sm"> Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="card flex flex-col items-center  bg-gray-200 rounded-lg shadow-md max-h-96 max-w-64 p-5 overflow-hidden">
+          <img src="images/tea-2.png" class="max-w-full mb-5" alt="">
+          <h3 class="my-2 text-xl font-bold">Pink Tea</h3>
+          <p class="text-sm"> Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="card flex flex-col items-center  bg-gray-200 rounded-lg shadow-md max-h-96 max-w-64 p-5 overflow-hidden">
+          <img src="images/tea-3.png" class="max-w-full  mb-5" alt="">
+          <h3 class="my-2 text-xl font-bold">Black Tea</h3>
+          <p class="text-sm"> Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="card flex flex-col items-center  bg-gray-200 rounded-lg shadow-md max-h-96 max-w-64 p-5 overflow-hidden">
+          <img src="images/tea-4.png" class="max-w-full mb-5" alt="">
+          <h3 class="my-2 text-xl font-bold">Lemon Tea</h3>
+          <p class="text-sm"> Creamer could be replaced by fresh milk</p>
+        </div>
+    
+   </div>
+     </div>
+    </section>
+    <section></section>
+    <section class="my-10">
+      <div class="">
+        <div class="flex justify-around items-center max-md:flex-col gap-5 bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white p-5 max-w-full">
+          <div class="left max-w-md">
+            <h3 class="my-2 text-3xl font-extrabold" >Meet Our Super Clients</h3>
+            <p class="text-sm mb-4"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            <button class="rounded-sm font-bold text-sm bg-gray-50 text-[#FF8938] px-2 py-1">Show All</button>
+          </div>
+          <div class="right text-black max-w-lg overflow-hidden p-5 lg:10">
+            <div class="card relative bg-gray-50 h-46 max-w-full rounded-md max-md:w-3/4 p-8 opacity-70 -right-24 top-16">
+                <div><img src="images/client.png" class="absolute rounded-full -top-5 -left-5" alt=""></div>
+                <p class="text-sm ">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h3 class="font-bold pt-5">Ilham Yuda</h3>
+                <p class="text-xs">Businessman </p>
+                <div class="right-5 bottom-5 absolute "><img src="images/circles.png" class="max-w-full " alt=""></div>
+            </div>
+            <div class="card relative bg-gray-50 h-46 max-w-full rounded-md max-md:w-3/4 p-8 -right-5">
+                <div><img src="images/client.png" class="absolute rounded-full -top-5 -left-5" alt=""></div>
+                <p class="text-sm ">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h3 class="font-bold pt-5">Ilham Yuda</h3>
+                <p class="text-xs">Businessman </p>
+                <div class="right-5 bottom-5 absolute "><img src="images/circles.png" class="max-w-full " alt=""></div>
+            </div>
+            <div class="card relative bg-gray-50 h-46 max-w-full rounded-md max-md:w-3/4 p-8  opacity-70 -right-24 -top-16">
+                <div><img src="images/client.png" class="absolute rounded-full -top-5 -left-5" alt=""></div>
+                <p class="text-sm ">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h3 class="font-bold pt-5">Ilham Yuda</h3>
+                <p class="text-xs">Businessman </p>
+                <div class="right-5 bottom-5 absolute "><img src="images/circles.png" class="max-w-full " alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
    </main> 
    <footer></footer>
 </body>
